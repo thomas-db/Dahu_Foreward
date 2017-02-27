@@ -37,9 +37,28 @@
                     </StackPanel>
                 </Border>
             </Grid>
-            <Border BorderBrush="#FFCF671A" BorderThickness="5" Margin="20,20,20,-3" MaxWidth="400" Background="#FFCF671A" CornerRadius="5" Height="50">
+            <Grid MaxWidth="400" Margin="20,3,20,0">
+                <TextBlock x:Name="textBlock1" Margin="10,0,0,0" TextWrapping="Wrap" Text="Mot de passe oublié ?" VerticalAlignment="Bottom" HorizontalAlignment="Left" Foreground="#FFD6D6D6" Opacity="0.995" FontSize="12"/>
+            </Grid>
+            <Border BorderBrush="#FFCF671A" BorderThickness="5" Margin="20,5,20,0" MaxWidth="400" Background="#FFCF671A" CornerRadius="5" Height="50">
                 <TextBlock x:Name="Connexion" TextWrapping="Wrap" Text="Connexion" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0" FontWeight="Bold" FontSize="18"/>
             </Border>
+            <Border BorderBrush="#FF16A644" BorderThickness="5" Margin="20,5,20,0" MaxWidth="400" Background="#FF16A644" CornerRadius="5" Height="50">
+                <TextBlock x:Name="Inscription" TextWrapping="Wrap" Text="Inscription" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0" FontWeight="Bold" FontSize="18"/>
+            </Border>
+            <Grid Margin="20,20,20,0" MaxWidth="400" Height="50">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Border Grid.Column="0" BorderBrush="#FF1A64CF" BorderThickness="5" Margin="0,0,5,0" MaxWidth="400" Background="#FF1A64CF" CornerRadius="5">
+                    <TextBlock x:Name="Connexion1" TextWrapping="Wrap" Text="Facebook" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0" FontWeight="Bold" FontSize="18"/>
+                </Border>
+                <Border Grid.Column="1" BorderBrush="#FFCF1A1A" BorderThickness="5" Margin="5,0,0,0" MaxWidth="400" Background="#FFCF1A1A" CornerRadius="5">
+                    <TextBlock x:Name="Connexion2" TextWrapping="Wrap" Text="Google" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0" FontWeight="Bold" FontSize="18"/>
+                </Border>
+            </Grid>
+
         </StackPanel>
     </Grid>
 </Page>
