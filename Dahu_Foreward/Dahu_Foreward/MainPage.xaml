@@ -7,7 +7,39 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/Logo/modern_grandma2.png" Stretch="UniformToFill">
+                <ImageBrush.RelativeTransform>
+                    <CompositeTransform CenterY="0.5" CenterX="0.5" TranslateX="-0.01"/>
+                </ImageBrush.RelativeTransform>
+            </ImageBrush>
+        </Grid.Background>
+        <Grid Margin="0">
+            <Grid.Background>
+                <SolidColorBrush Color="Black" Opacity="0.7"/>
+            </Grid.Background>
+        </Grid>
 
+        <StackPanel Margin="0">
+            <Grid HorizontalAlignment="Center" Height="100" VerticalAlignment="Top" Width="100" Margin="0,50,0,0">
+                <Grid.Background>
+                    <ImageBrush Stretch="Uniform" ImageSource="Assets/Logo/dehu4.png"/>
+                </Grid.Background>
+            </Grid>
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="Dahu" Foreground="White" VerticalAlignment="Top" FontSize="35" FontFamily="Segoe WP Black" FontStyle="Italic" FontWeight="Bold"/>
+            <Grid Margin="20,40,20,0" MaxWidth="400">
+                <Border BorderBrush="White" BorderThickness="5" VerticalAlignment="Top" CornerRadius="5" Margin="0">
+                    <StackPanel Margin="0" Orientation="Vertical" Background="White">
+                        <TextBox x:Name="Login" TextAlignment="Left" Margin="0,0,0,3" TextWrapping="Wrap" Text="" BorderBrush="White" BorderThickness="0" Background="White" PlaceholderText="Nom d'utilisateur" Padding="10,5,10,0"/>
+                        <Canvas Height="1" Margin="0" Background="#FFAEAEAE"/>
+                        <PasswordBox x:Name="passwordBox" BorderThickness="0" PlaceholderText="Mot de passe" Padding="10,5,10,0" Margin="0,3,0,0"/>
+                    </StackPanel>
+                </Border>
+            </Grid>
+            <Border BorderBrush="#FFCF671A" BorderThickness="5" Margin="20,20,20,-3" MaxWidth="400" Background="#FFCF671A" CornerRadius="5" Height="50">
+                <TextBlock x:Name="Connexion" TextWrapping="Wrap" Text="Connexion" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0" FontWeight="Bold" FontSize="18"/>
+            </Border>
+        </StackPanel>
     </Grid>
 </Page>
