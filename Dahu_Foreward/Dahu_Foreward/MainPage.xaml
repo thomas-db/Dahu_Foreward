@@ -5,7 +5,7 @@
     xmlns:local="using:Dahu_Foreward"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d" RequestedTheme="Dark">
 
     <Grid>
         <Grid.Background>
@@ -20,45 +20,49 @@
                 <SolidColorBrush Color="Black" Opacity="0.7"/>
             </Grid.Background>
         </Grid>
+        <ScrollViewer Margin="0">
+            <StackPanel Margin="0" Height="640" Width="360">
+                <Grid HorizontalAlignment="Center" Height="100" VerticalAlignment="Top" Width="100" Margin="0,50,0,0">
+                    <Grid.Background>
+                        <ImageBrush Stretch="Uniform" ImageSource="Assets/Logo/dehu4.png"/>
+                    </Grid.Background>
+                </Grid>
+                <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="Dahu" Foreground="White" VerticalAlignment="Top" FontSize="35" FontFamily="Segoe WP Black" FontStyle="Italic" FontWeight="Bold"/>
+                <Grid Margin="20,40,20,0" MaxWidth="400">
+                    <Border BorderBrush="White" BorderThickness="5" VerticalAlignment="Top" CornerRadius="5" Margin="0">
+                        <StackPanel Margin="0" Orientation="Vertical" Background="White">
+                            <TextBox x:Name="Login" TextAlignment="Left" Margin="0,0,0,3" TextWrapping="Wrap" Text="" BorderBrush="White" BorderThickness="0" Background="White" PlaceholderText="Nom d'utilisateur" Padding="10,5,10,0" Foreground="Black" RequestedTheme="Light"/>
+                            <Canvas Height="1" Margin="0" Background="#FFAEAEAE"/>
+                            <PasswordBox x:Name="passwordBox" BorderThickness="0" PlaceholderText="Mot de passe" Padding="10,5,10,0" Margin="0,3,0,0" RequestedTheme="Light"/>
+                        </StackPanel>
+                    </Border>
+                </Grid>
+                <Grid MaxWidth="400" Margin="20,3,20,0">
+                    <TextBlock x:Name="textBlock1" Margin="10,0,0,0" TextWrapping="Wrap" Text="Mot de passe oublié ?" VerticalAlignment="Bottom" HorizontalAlignment="Left" Foreground="#FFD6D6D6" Opacity="0.995" FontSize="12"/>
+                </Grid>
+                <Border BorderBrush="#FFCF671A" BorderThickness="5" Margin="20,5,20,0" MaxWidth="400" Background="#FFCF671A" CornerRadius="5" Height="50">
+                    <TextBlock x:Name="Connexion" TextWrapping="Wrap" Text="Connexion" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0" FontWeight="Bold" FontSize="18"/>
+                </Border>
+                <Border BorderBrush="#E53E3E3E" BorderThickness="5" Margin="20,5,20,0" MaxWidth="400" Background="#E53E3E3E" CornerRadius="5" Height="50">
+                    <TextBlock x:Name="Inscription" TextWrapping="Wrap" Text="Inscription" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0" FontWeight="Bold" FontSize="18"/>
+                </Border>
+                <Grid Margin="20,20,20,0" MaxWidth="400" BorderThickness="0,1,0,0" BorderBrush="#FFE2E2E2">
+                    <TextBox x:Name="textBox" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="Connecte toi facilement avec les reseaux !" VerticalAlignment="Top" BorderBrush="White" BorderThickness="0" Foreground="White" Background="Transparent" FontFamily="Segoe WP Black" FontWeight="Light" FontSize="15"/>
+                </Grid>
+                <Grid Margin="20,5,20,0" MaxWidth="400" Height="50">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Border Grid.Column="0" BorderBrush="#B21A64CF" BorderThickness="5" Margin="0,0,5,0" MaxWidth="400" Background="#B21A64CF" CornerRadius="5">
+                        <TextBlock x:Name="Connexion1" TextWrapping="Wrap" Text="Facebook" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0" FontWeight="Bold" FontSize="16"/>
+                    </Border>
+                    <Border Grid.Column="1" BorderBrush="#B2CF1A1A" BorderThickness="5" Margin="5,0,0,0" MaxWidth="400" CornerRadius="5" Background="#B2CF1A1A">
+                        <TextBlock x:Name="Connexion2" TextWrapping="Wrap" Text="Google" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0" FontWeight="Bold" FontSize="16"/>
+                    </Border>
+                </Grid>
 
-        <StackPanel Margin="0">
-            <Grid HorizontalAlignment="Center" Height="100" VerticalAlignment="Top" Width="100" Margin="0,50,0,0">
-                <Grid.Background>
-                    <ImageBrush Stretch="Uniform" ImageSource="Assets/Logo/dehu4.png"/>
-                </Grid.Background>
-            </Grid>
-            <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="Dahu" Foreground="White" VerticalAlignment="Top" FontSize="35" FontFamily="Segoe WP Black" FontStyle="Italic" FontWeight="Bold"/>
-            <Grid Margin="20,40,20,0" MaxWidth="400">
-                <Border BorderBrush="White" BorderThickness="5" VerticalAlignment="Top" CornerRadius="5" Margin="0">
-                    <StackPanel Margin="0" Orientation="Vertical" Background="White">
-                        <TextBox x:Name="Login" TextAlignment="Left" Margin="0,0,0,3" TextWrapping="Wrap" Text="" BorderBrush="White" BorderThickness="0" Background="White" PlaceholderText="Nom d'utilisateur" Padding="10,5,10,0"/>
-                        <Canvas Height="1" Margin="0" Background="#FFAEAEAE"/>
-                        <PasswordBox x:Name="passwordBox" BorderThickness="0" PlaceholderText="Mot de passe" Padding="10,5,10,0" Margin="0,3,0,0"/>
-                    </StackPanel>
-                </Border>
-            </Grid>
-            <Grid MaxWidth="400" Margin="20,3,20,0">
-                <TextBlock x:Name="textBlock1" Margin="10,0,0,0" TextWrapping="Wrap" Text="Mot de passe oublié ?" VerticalAlignment="Bottom" HorizontalAlignment="Left" Foreground="#FFD6D6D6" Opacity="0.995" FontSize="12"/>
-            </Grid>
-            <Border BorderBrush="#FFCF671A" BorderThickness="5" Margin="20,5,20,0" MaxWidth="400" Background="#FFCF671A" CornerRadius="5" Height="50">
-                <TextBlock x:Name="Connexion" TextWrapping="Wrap" Text="Connexion" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0" FontWeight="Bold" FontSize="18"/>
-            </Border>
-            <Border BorderBrush="#FF16A644" BorderThickness="5" Margin="20,5,20,0" MaxWidth="400" Background="#FF16A644" CornerRadius="5" Height="50">
-                <TextBlock x:Name="Inscription" TextWrapping="Wrap" Text="Inscription" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0" FontWeight="Bold" FontSize="18"/>
-            </Border>
-            <Grid Margin="20,20,20,0" MaxWidth="400" Height="50">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="1*" />
-                    <ColumnDefinition Width="1*"/>
-                </Grid.ColumnDefinitions>
-                <Border Grid.Column="0" BorderBrush="#FF1A64CF" BorderThickness="5" Margin="0,0,5,0" MaxWidth="400" Background="#FF1A64CF" CornerRadius="5">
-                    <TextBlock x:Name="Connexion1" TextWrapping="Wrap" Text="Facebook" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0" FontWeight="Bold" FontSize="18"/>
-                </Border>
-                <Border Grid.Column="1" BorderBrush="#FFCF1A1A" BorderThickness="5" Margin="5,0,0,0" MaxWidth="400" Background="#FFCF1A1A" CornerRadius="5">
-                    <TextBlock x:Name="Connexion2" TextWrapping="Wrap" Text="Google" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0" FontWeight="Bold" FontSize="18"/>
-                </Border>
-            </Grid>
-
-        </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
 </Page>
